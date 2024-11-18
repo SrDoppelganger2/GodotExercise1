@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0otl6ei5tnmf"]
+
+[ext_resource type="Texture2D" uid="uid://c65u7oj0bkott" path="res://Assets/bankiHead.png" id="1_rqfl3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3rmou"]
+radius = 69.0072
+
+[node name="ball" type="RigidBody2D"]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.999996, -1)
+scale = Vector2(0.280449, 0.280449)
+texture = ExtResource("1_rqfl3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_3rmou")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://chq23p7bnaiar"]
+
+[ext_resource type="PackedScene" uid="uid://b0otl6ei5tnmf" path="res://Scenes/ball.tscn" id="1_2eut2"]
+[ext_resource type="PackedScene" uid="uid://c2qba1cnjkfve" path="res://Scenes/player.tscn" id="1_k2dni"]
+
+[node name="World" type="Node2D"]
+
+[node name="Node2D" parent="." instance=ExtResource("1_2eut2")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_k2dni")]
+position = Vector2(3, 180)
+collision_mask = 2
